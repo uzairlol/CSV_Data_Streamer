@@ -1,14 +1,14 @@
 ZeroMQ Publisher-Subscriber for CSV Data
 ========================================
 
-This repository contains a Python implementation of a ZeroMQ publisher-subscriber pattern for streaming data from a CSV file over a network.
+This repository contains a Python implementation of a ZeroMQ publisher-subscriber pattern for streaming data from a CSV file over a local network.
 
 Features
 --------
 
 -   Publishes data from a CSV file using ZeroMQ.
 -   Allows subscribers to connect and receive data in real-time.
--   Configurable to work over local networks and the internet.
+-   Configurable to work over local networks.
 
 Requirements
 ------------
@@ -55,9 +55,9 @@ Usage
 
     Example modifications in subscriber.py:
 
-    Set the public IP address of the publisher laptop as: public_ip = "39.33.241.27" (Use your actual public IP address)
-
-2.  Run the subscriber script by executing:
+    Set the internal IP address of the publisher laptop as: public_ip = "192.168.1.x" (Replace with your actual internal IP)
+    
+3.  Run the subscriber script by executing:
 
     python subscriber.py
 
